@@ -10,14 +10,14 @@ const inputAbout = document.querySelector(".popup__input_about");
 function openEdit() {
   inputName.value = inName.textContent;
   inputAbout.value = inAbout.textContent;
-  popup.classList.toggle("popup_opened");
+  popup.classList.toggle("togglePopup");
 }
 
 buttonEdit.addEventListener("click", openEdit);
 buttonClose.addEventListener("click", openEdit);
 
-function saveChange(evt) {
-  evt.preventDefault();
+function saveChange(handleFormSubmit) {
+  handleFormSubmit.preventDefault();
   inName.textContent = inputName.value;
   inAbout.textContent = inputAbout.value;
   openEdit();
