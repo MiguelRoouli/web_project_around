@@ -16,8 +16,16 @@
         <button type="button" class="popup__button popup__button_close">
           <img src="./images/close.svg" alt="close" />
         </button>
-        <form class="popup__container">
-          <h2 class="popup__subtitle">Editar perfil</h2>
+        <div class="popup__images">
+          <div class="popup__content-image">
+            <img class="popup__image" src="#" alt="" />
+          </div>
+          <div class="popup__paragraph-content">
+            <p class="popup__paragraph"></p>
+          </div>
+        </div>
+        <form action="#" class="popup__container">
+          <h2 class="popup__subtitle">h</h2>
           <fieldset class="popup__content">
             <input
               type="text"
@@ -34,6 +42,13 @@
           </fieldset>
           <fieldset class="popup__content">
             <button type="submit" class="popup__button popup__button_save">
+              Guardar
+            </button>
+            <button
+              type="button"
+              class="popup__button popup__button_add"
+              disabled
+            >
               Guardar
             </button>
           </fieldset>
@@ -66,115 +81,24 @@
             <img src="./images/plus.svg" alt="plus" />
           </button>
         </div>
-        <div class="main__gallery">
-          <div class="main__gallery-card">
-            <img
-              src="./images/valle-yosemite.png"
-              alt="valle-yosemite"
-              class="main__gallery-image"
-            />
-            <div class="main__gallery-content">
-              <p class="main__gallery-paragraph">Valle de Yosemite</p>
-              <button type="button" class="main__button main__button_like">
-                <img
-                  src="./images/like.svg"
-                  alt="like"
-                  class="main__gallery-like"
-                />
-              </button>
-            </div>
-          </div>
-          <div class="main__gallery-card">
-            <img
-              src="./images/lago-louise.png"
-              alt="lago-louise"
-              class="main__gallery-image"
-            />
-            <div class="main__gallery-content">
-              <p class="main__gallery-paragraph">Lago Louise</p>
-              <button type="button" class="main__button main__button_like">
-                <img
-                  src="./images/like.svg"
-                  alt="like"
-                  class="main__gallery-like"
-                />
-              </button>
-            </div>
-          </div>
-          <div class="main__gallery-card">
-            <img
-              src="./images/montanas-calvas.png"
-              alt="montanas-calvas"
-              class="main__gallery-image"
-            />
-            <div class="main__gallery-content">
-              <p class="main__gallery-paragraph">Montañas Calvas</p>
-              <button type="button" class="main__button main__button_like">
-                <img
-                  src="./images/like.svg"
-                  alt="like"
-                  class="main__gallery-like"
-                />
-              </button>
-            </div>
-          </div>
-          <div class="main__gallery-card">
-            <img
-              src="./images/latemar.png"
-              alt="latemar"
-              class="main__gallery-image"
-            />
-            <div class="main__gallery-content">
-              <p class="main__gallery-paragraph">Latemar</p>
-              <button type="button" class="main__button main__button_like">
-                <img
-                  src="./images/like.svg"
-                  alt="like"
-                  class="main__gallery-like"
-                />
-              </button>
-            </div>
-          </div>
-          <div class="main__gallery-card">
-            <img
-              src="./images/vanois-park.png"
-              alt="vanois-park"
-              class="main__gallery-image"
-            />
-            <div class="main__gallery-content">
-              <p
-                class="main__gallery-paragraph main__gallery-paragraph_text_overflow"
-              >
-                Vanois National Park
-              </p>
-              <button type="button" class="main__button main__button_like">
-                <img
-                  src="./images/like.svg"
-                  alt="like"
-                  class="main__gallery-like"
-                />
-              </button>
-            </div>
-          </div>
-          <div class="main__gallery-card">
-            <img
-              src="./images/lago-braies.png"
-              alt="lago-braies"
-              class="main__gallery-image"
-            />
-            <div class="main__gallery-content">
-              <p class="main__gallery-paragraph">Lago di Braies</p>
-              <button type="button" class="main__button main__button_like">
-                <img
-                  src="./images/like.svg"
-                  alt="like"
-                  class="main__gallery-like"
-                />
-              </button>
-            </div>
+        <div class="main__gallery"></div>
+      </main>
+      <template id="main__template">
+        <div class="main__gallery-card">
+          <img class="main__gallery-image" />
+          <button
+            type="button"
+            class="main__button main__button_trash"
+          ></button>
+          <div class="main__gallery-content">
+            <p class="main__gallery-paragraph"></p>
+            <button
+              type="button"
+              class="main__button main__button_like"
+            ></button>
           </div>
         </div>
-      </main>
+      </template>
       <footer class="footer">
         <p class="footer__copyright">&#x00a9; 2024 Around The U.S.</p>
       </footer>
